@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AjoLedger — Digital Savings Circle Management</title>
+<meta name="description" content="Digital management for Ajo, Esusu, welfare funds, cooperatives and thrift groups. Zero custody. Coordinator-first.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  background:#0a1628;
+  min-height:100vh;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  padding:0 16px 40px;
+}
+.page{width:100%;max-width:480px;padding-top:48px}
+
+/* Profile */
+.profile{text-align:center;margin-bottom:28px}
+.avatar{
+  width:96px;height:96px;border-radius:50%;
+  background:#166534;
+  border:3px solid #22c55e;
+  display:inline-flex;align-items:center;justify-content:center;
+  font-size:42px;font-weight:700;color:#22c55e;
+  margin-bottom:14px;
+  font-family:Georgia,serif;
+}
+.name{font-size:22px;font-weight:700;color:#fff;margin-bottom:4px}
+.handle{font-size:14px;color:#22c55e;font-weight:600;margin-bottom:10px}
+.bio{font-size:13px;color:#94a3b8;line-height:1.6;max-width:320px;margin:0 auto 16px}
+
+/* Pill tags */
+.tags{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-bottom:8px}
+.tag{
+  font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px;
+  background:rgba(34,197,94,0.12);color:#22c55e;
+  border:1px solid rgba(34,197,94,0.25);
+}
+
+/* Divider */
+.divider{height:1px;background:rgba(255,255,255,0.07);margin:20px 0}
+
+/* Section label */
+.section-label{
+  font-size:10px;font-weight:600;letter-spacing:1px;
+  text-transform:uppercase;color:#475569;
+  margin-bottom:10px;padding-left:2px;
+}
+
+/* Buttons */
+.btn{
+  display:flex;align-items:center;gap:14px;
+  width:100%;padding:16px 20px;border-radius:14px;
+  text-decoration:none;margin-bottom:10px;
+  transition:all 0.2s;border:1px solid transparent;
+  background:rgba(255,255,255,0.05);
+  border-color:rgba(255,255,255,0.08);
+  color:#fff;
+}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,0,0,0.3)}
+.btn-primary{
+  background:rgba(22,101,52,0.85);
+  border-color:rgba(34,197,94,0.4);
+}
+.btn-primary:hover{background:rgba(22,101,52,1)}
+.btn-whatsapp{
+  background:rgba(37,211,102,0.12);
+  border-color:rgba(37,211,102,0.3);
+}
+.btn-whatsapp:hover{background:rgba(37,211,102,0.2)}
+.btn-icon{
+  width:40px;height:40px;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;flex-shrink:0;
+  background:rgba(255,255,255,0.07);
+}
+.btn-primary .btn-icon{background:rgba(34,197,94,0.2)}
+.btn-whatsapp .btn-icon{background:rgba(37,211,102,0.15)}
+.btn-content{flex:1;text-align:left}
+.btn-title{font-size:14px;font-weight:600;color:#fff;line-height:1.3}
+.btn-sub{font-size:12px;color:#94a3b8;margin-top:2px}
+.btn-arrow{font-size:16px;color:#475569;flex-shrink:0}
+.btn-primary .btn-arrow{color:#22c55e}
+
+/* Stats strip */
+.stats{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:8px;margin-bottom:8px;
+}
+.stat{
+  text-align:center;padding:14px 8px;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.07);
+  border-radius:12px;
+}
+.stat-num{font-size:18px;font-weight:700;color:#22c55e}
+.stat-label{font-size:10px;color:#64748b;margin-top:3px;line-height:1.3}
+
+/* Footer */
+.footer{text-align:center;margin-top:28px}
+.footer-logo{font-size:12px;color:#334155;margin-bottom:4px}
+.footer-link{font-size:12px;color:#22c55e;text-decoration:none;font-weight:600}
+.footer-copy{font-size:11px;color:#1e293b;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Profile -->
+  <div class="profile">
+    <div class="avatar">A</div>
+    <div class="name">AjoLedger</div>
+    <div class="handle">@ajoledger.ng</div>
+    <div class="bio">
+      Digital savings circle management for Nigerian communities.<br>
+      Ajo · Esusu · Welfare · Cooperative · Thrift &amp; Loan
+    </div>
+    <div class="tags">
+      <span class="tag">✓ Zero custody</span>
+      <span class="tag">✓ Coordinator-first</span>
+      <span class="tag">✓ NDPR compliant</span>
+      <span class="tag">✓ NIN verified</span>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-num">5</div>
+      <div class="stat-label">Circle types</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">₦0</div>
+      <div class="stat-label">Funds ever held</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">Free</div>
+      <div class="stat-label">To get started</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Primary CTA -->
+  <div class="section-label">Get started</div>
+
+  <a href="https://www.ajoledger.ng/#register" class="btn btn-primary" target="_blank" rel="noopener">
+    <div class="btn-icon">🚀</div>
+    <div class="btn-content">
+      <div class="btn-title">Start your circle — free</div>
+      <div class="btn-sub">Register as a coordinator in 2 minutes</div>
+    </div>
+    <div class="btn-arrow">→</div>
+  </a>
+
+  <div class="divider"></div>
+
+  <!-- Learn more -->
+  <div class="section-label">Learn more</div>
+
+  <a href="https://www.ajoledger.ng/#how-it-works" class="btn" target="_blank" rel="noopener">
+    <div class="btn-icon">▶️</div>
+    <div class="btn-content">
+      <div class="btn-title">How AjoLedger works</div>
+      <div class="btn-sub">See the platform in 5 steps</div>
+    </div>
+    <div class="btn-arrow">→</div>
+  </a>
+
+  <a href="https://www.ajoledger.ng/#circle-types" class="btn" target="_blank" rel="noopener">
+    <div class="btn-icon">🔄</div>
+    <div class="btn-content">
+      <div class="btn-title">Circle types explained</div>
+      <div class="btn-sub">Rotating Ajo · Welfare · Cooperative · Thrift & Loan · Pool</div>
+    </div>
+    <div class="btn-arrow">→</div>
+  </a>
+
+  <a href="https://www.ajoledger.ng/#pricing" class="btn" target="_blank" rel="noopener">
+    <div class="btn-icon">💰</div>
+    <div class="btn-content">
+      <div class="btn-title">Pricing &amp; fees</div>
+      <div class="btn-sub">One-time activation fee — no monthly subscription</div>
+    </div>
+    <div class="btn-arrow">→</div>
+  </a>
+
+  <div class="divider"></div>
+
+  <!-- Support -->
+  <div class="section-label">Support</div>
+
+  <a href="https://wa.me/2349012984122?text=Hi%2C+I%27d+like+to+learn+more+about+AjoLedger+for+my+savings+circle." class="btn btn-whatsapp" target="_blank" rel="noopener">
+    <div class="btn-icon">💬</div>
+    <div class="btn-content">
+      <div class="btn-title">WhatsApp us</div>
+      <div class="btn-sub">Mon–Sat 9AM–6PM · +234 901 298 4122</div>
+    </div>
+    <div class="btn-arrow">→</div>
+  </a>
+
+  <a href="mailto:support@ajoledger.ng" class="btn" target="_blank" rel="noopener">
+    <div class="btn-icon">📧</div>
+    <div class="btn-content">
+      <div class="btn-title">Email support</div>
+      <div class="btn-sub">support@ajoledger.ng</div>
+    </div>
+    <div class="btn-arrow">→</div>
+  </a>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-logo">A product of</div>
+    <a href="https://profitapps.ng" class="footer-link" target="_blank" rel="noopener">Profit Apps Enterprises</a>
+    <div class="footer-copy">CAC Reg. 9568752 · Kaduna, Nigeria</div>
+  </div>
+
+</div>
+</body>
+</html>
